@@ -1,0 +1,25 @@
+apply plugin: 'android'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion '19.1.0'
+    defaultConfig {
+        applicationId 'edu.vuum.mocca'
+        minSdkVersion 12
+        targetSdkVersion 19
+
+
+    }
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile files('C:/AndroidProjects/W6-A5-ThreadedDownloads-StartedServices/libs/robotium-solo-5.1.jar')
+}
